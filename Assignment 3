@@ -1,0 +1,61 @@
+Version Control with GitBranching: 
+Create a new branch in your Git repository called "feature-branch." 
+Make changes to a file in this branch and commit them. 
+Provide a screenshot of the branch creation and commit process.
+Merging: Merge the "feature-branch" into the main branch. 
+Explain the merge process and resolve any conflicts if they occur
+
+
+ Steps to Complete Assignment 3: Version Control with Git
+
+ 1. *Creating a New Branch:*
+   - *Step 1:* Open your terminal or Git Bash in your project directory.
+   - *Step 2:* Create a new branch called `feature-branch` using the following command:
+     ```bash
+     git checkout -b feature-branch
+     ```
+     This command creates a new branch and switches to it immediately.
+   - *Step 3:* Verify that you are on the `feature-branch` by running:
+     ```bash
+     git branch
+     ```
+     The branch you’re currently on will have an asterisk (*) next to it.
+
+   
+
+ 2. *Making Changes and Committing:*
+   - *Step 4:* Make some changes to a file in your project. You could add a line of text to a file like `README.md` or modify a Python script.
+   - *Step 5:* Add the changes to the staging area:
+     ```bash
+     git add .
+     ```
+   - *Step 6:* Commit the changes with a meaningful message:
+     ```bash
+     git commit -m "Add feature or modify file in feature-branch"
+     ```
+     
+  
+
+3. *Merging Branches:*
+   - *Step 7:* Switch back to the `main` branch:
+     ```bash
+     git checkout main
+     ```
+   - *Step 8:* Merge `feature-branch` into `main`:
+     ```bash
+     git merge feature-branch
+     ```
+     - If there are no conflicts, Git will merge the branches automatically.
+     - If there are conflicts, Git will prompt you to resolve them. Open the conflicting files, make the necessary changes, and then add and commit the resolved files.
+       - To resolve conflicts, open the file and choose which changes to keep or combine changes from both branches. After resolving conflicts, use:
+         ```bash
+         git add .
+         git commit -m "Resolve merge conflict"
+         ```
+
+   - *Step 9:* Verify that the merge was successful by checking the commit history:
+     ```bash
+     git log --oneline --graph
+     ```
+
+   - Explanation:The merge process combines the changes from the `feature-branch` into the `main` branch. If there are conflicting changes (i.e., changes made to the same lines in the same file in both branches), Git will ask you to resolve these conflicts manually. Once resolved, you can complete the merge.
