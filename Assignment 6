@@ -1,0 +1,134 @@
+Command Line Basics
+Command Line Navigation: 
+Demonstrate how to navigate the file system using basic command-line commands (e.g., cd, ls, pwd) in your preferred command-line interface (Windows Command Prompt or Linux Terminal).
+File Manipulation: Create, copy, move, and delete files and directories usingcommand-line command
+
+
+Command Line Basics
+
+1. Command Line Navigation:
+
+Using the command-line interface (CLI) in either Windows Command Prompt or a Linux Terminal, you can navigate the file system using several basic commands.
+
+- `pwd` (Print Working Directory):
+  - Purpose: Displays the current directory you are in.
+  - Command:
+    ```bash
+    pwd
+    ```
+  - Example Output:
+    ```
+    /home/username/projects
+    ```
+  - Explanation: This command shows the absolute path of your current directory.
+
+- `ls` (List):
+  - Purpose:Lists the files and directories in the current directory.
+  - Command:
+    ```bash
+    ls
+    ```
+  - Example Output:
+    ```
+    file1.txt  directory1  script.py
+    ```
+  - Explanation:This command shows all the contents of the current directory.
+
+- `cd` (Change Directory):
+  - Purpose: Changes the current directory to a specified directory.
+  - Command:
+    ```bash
+    cd directory_name
+    ```
+  - Example Command:
+    ```bash
+    cd /home/username/projects
+    ```
+  - Explanation: This command changes the current directory to `/home/username/projects`.
+
+- `cd ..` (Move Up One Directory):
+  - Purpose: Moves up one directory level.
+  - Command:
+    ```bash
+    cd ..
+    ```
+  - Explanation: This command takes you up one level in the directory tree.
+
+ 2. File Manipulation:
+
+You can create, copy, move, and delete files and directories using basic command-line commands.
+
+- Create a Directory:
+  - Purpose: Creates a new directory.
+  - Command:
+    ```bash
+    mkdir new_directory
+    ```
+  - Example Command:
+    ```bash
+    mkdir my_folder
+    ```
+  - Explanation: This creates a directory named `my_folder`.
+
+- Create a File:
+  - Purpose: Creates a new file.
+  - Command (Linux/Mac):
+    ```bash
+    touch filename.txt
+    ```
+  - Command (Windows):
+    ```bash
+    echo. > filename.txt
+    ```
+  - Explanation: This command creates an empty file named `filename.txt`.
+
+- Copy a File:
+  - Purpose: Copies a file from one location to another.
+  - Command:
+    ```bash
+    cp source_file destination_directory
+    ```
+  - Example Command:
+    ```bash
+    cp filename.txt /home/username/backup/
+    ```
+  - Explanation: This copies `filename.txt` to the `backup` directory.
+
+- Move a File:
+  - Purpose: Moves a file from one location to another.
+  - Command:
+    ```bash
+    mv source_file destination_directory
+    ```
+  - Example Command:
+    ```bash
+    mv filename.txt /home/username/archive/
+    ```
+  - Explanation: This moves `filename.txt` to the `archive` directory.
+
+- Delete a File:
+  -  Purpose: Deletes a specified file.
+  - Command (Linux/Mac):
+    ```bash
+    rm filename.txt
+    ```
+  - Command (Windows):
+    ```bash
+    del filename.txt
+    ```
+  - Explanation: This command deletes `filename.txt` from the current directory.
+
+- Delete a Directory:
+  - Purpose: Deletes a directory and its contents.
+  - Command (Linux/Mac):
+    ```bash
+    rm -r directory_name
+    ```
+  - Command (Windows):
+    ```bash
+    rmdir /s directory_name
+    ```
+  - explanation: This command deletes `directory_name` and all of its contents.
+
+Conclusion:
+These basic command-line commands allow you to navigate the file system and manipulate files and directories effectively. Mastering these commands is crucial for efficient file management and automation in both Windows and Linux environments.
